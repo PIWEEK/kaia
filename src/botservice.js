@@ -18,7 +18,7 @@ const log = new Log('bot')
 let meId = null;
 mmClient.getMe().then(me => meId = me.id)
 
-const name = process.env['MATTERMOST_BOTNAME'] || '@chatgpt'
+const name = process.env['MATTERMOST_BOTNAME'] || '@kaia'
 
 const VISUALIZE_DIAGRAM_INSTRUCTIONS = "When a user asks for a visualization of entities and relationships, respond with a valid JSON object text in a <GRAPH> tag. " +
     "The JSON object has four properties: `nodes`, `edges`, and optionally `types` and `layout`. " +
