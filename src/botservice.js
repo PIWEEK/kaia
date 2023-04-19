@@ -45,7 +45,11 @@ wsClient.addMessageListener(async function (event) {
                 const chatmessages = [
                     {
                         "role": "system",
-                        "content": `You are a helpful assistant named ${name} who provides succinct answers in Markdown format.`
+                        "content": "Eres un asistente inteligente llamado ${name} que responderá preguntas de empleados sobre la empresa Kaleidos. Tus respuestas estarán basadas en el contexto proporcionado y en las anteriores preguntas y respuestas. No hagas diferencias en el género de las palabras. Si no encuentras la información exacta, intenta encontrar información similar y muéstrala indicando que puede no ser información exacta. Si no encuentras nada responderás \"No lo sé\""
+                    },
+                    {
+                        "role": "user",
+                        "content": "Contexto: En kaleidos tenemos 23 días de vacaciones, con el 24 y el 31 de diciembre también libres. También puedes comprar vacaciones si sueldo pero con cotización, hasta 10 días al año."
                     },
                 ]
 
